@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="moim.prjmoim.FindById">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="아이디 찾기"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/etName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="116dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="이름"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etEmail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etName2"
+            android:layout_alignStart="@+id/etName2"
+            android:layout_below="@+id/etName2"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/btFindById2"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/etEmail2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="아이디 찾기"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btLogin3"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/btFindById2"
+            android:layout_alignStart="@+id/btFindById2"
+            android:layout_below="@+id/btFindById2"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="로그인"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
